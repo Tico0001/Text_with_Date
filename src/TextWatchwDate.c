@@ -243,7 +243,8 @@ void handle_init(AppContextRef ctx) {
 	text_layer_init(&dateLayer, GRect(29, 140, 144-40 /* width */, 168-54 /* height */));
 	text_layer_set_text_color(&dateLayer, GColorWhite);
 	text_layer_set_background_color(&dateLayer, GColorClear);
-	text_layer_set_font(&dateLayer, fonts_get_system_font(FONT_KEY_GOTHIC_14));
+	text_layer_set_font(&dateLayer, fonts_get_system_font(FONT_KEY_GOTHIC_18_BOLD));
+	text_layer_set_text_alignment(&dateLayer, GTextAlignmentRight);
 
 	// Configure time on init
 	get_time(&t);
